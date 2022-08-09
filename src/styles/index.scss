@@ -2,4 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 @import "./fonts";
-// @import "./navigation";
+@import "./variables";
+
+body,
+html,
+#root {
+  margin: 1rem;
+}
+
+.Navigation {
+  input {
+    height: 48px;
+    background: url("../assets/search.png") no-repeat 5% 50%;
+    border-radius: 8px;
+    width: 70vh;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10%;
+    border-color: $FCGrey;
+    &:focus {
+      outline: none;
+      border-width: 2px;
+      border-color: $FCBlue;
+    }
+  }
+  .search-button {
+    @include customButton();
+    padding: 12px;
+    margin-left: 0.7rem;
+  }
+}

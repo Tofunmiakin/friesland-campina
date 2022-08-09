@@ -24,10 +24,10 @@ export const NavPopover: React.FC<Props> = ({ popImg, arrow, text }) => {
 
   return (
     <div>
-      <button className="popover-button" onClick={handleClick}>
-        <img src={popImg} alt="user" />
+      <button className="popover-button flex" onClick={handleClick}>
+        <img src={popImg} alt="user" className="mr-1" />
         {text}
-        <img src={arrow} alt="down-arrow" />
+        <img src={arrow} alt="down-arrow" className="my-auto ml-1" />
       </button>
       <Popover
         id={id}

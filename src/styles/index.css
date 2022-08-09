@@ -6,4 +6,36 @@
 *::after,
 *::before {
   font-family: "Ubuntu", sans-serif;
+}
+
+body,
+html,
+#root {
+  margin: 1rem;
+}
+
+.Navigation input {
+  height: 48px;
+  background: url("../assets/search.png") no-repeat 5% 50%;
+  border-radius: 8px;
+  width: 70vh;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10%;
+  border-color: #808080;
+}
+.Navigation input:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: #0a7fb6;
+}
+.Navigation .search-button {
+  background-color: #0a7fb6;
+  color: white;
+  border-radius: 8px;
+  padding: 12px;
+  margin-left: 0.7rem;
+}
+.Navigation .search-button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
 }/*# sourceMappingURL=index.css.map */

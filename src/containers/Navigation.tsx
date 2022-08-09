@@ -10,20 +10,24 @@ interface Props {}
 
 export const Navigation: React.FC<Props> = () => {
   return (
-    <div className="flex justify-between">
-      <img src={Logo} alt="Logo" />
+    <div className="Navigation flex justify-between">
+      <img src={Logo} alt="Logo" className="Logo" />
 
-      <form>
-        <input
-          className="search-bar"
-          placeholder="Search products, brand and categories"
-        ></input>
-        <button>SEARCH</button>
-      </form>
+      <div className="my-auto ">
+        <form className="">
+          <input
+            className="border pl-12"
+            placeholder="Search products, brand and categories"
+          ></input>
+          <button className="search-button">SEARCH</button>
+        </form>
+      </div>
 
-      <NavPopover popImg={user} arrow={dwnarrow} text={"Account"} />
-      <NavPopover popImg={helpCircle} arrow={dwnarrow} text={"Help"} />
-      <NavPopover popImg={shoppingCart} arrow={dwnarrow} text={"Cart"} />
+      <div className="flex my-auto space-x-5">
+        <NavPopover popImg={user} arrow={dwnarrow} text={"Account"} />
+        <NavPopover popImg={helpCircle} arrow={dwnarrow} text={"Help"} />
+        <NavPopover popImg={shoppingCart} arrow={dwnarrow} text={"Cart"} />
+      </div>
     </div>
   );
 };
