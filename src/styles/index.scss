@@ -7,14 +7,15 @@
 body,
 html,
 #root {
-  margin: 1rem;
+  background-color: $FCBackground;
 }
 
 .Navigation {
-  input {
+  background-color: white;
+  .search-bar {
     height: 48px;
     background: url("../assets/search.png") no-repeat 5% 50%;
-    border-radius: 8px;
+    border-radius: $BorderRadius;
     width: 70vh;
     font-size: 16px;
     font-weight: 400;
@@ -30,5 +31,24 @@ html,
     @include customButton();
     padding: 12px;
     margin-left: 0.7rem;
+  }
+}
+
+.product-listing {
+  margin-top: 72px;
+
+  .listing {
+    border-radius: $BorderRadius;
+    margin-top: 24px;
+    .apply {
+      color: $FCBlue;
+    }
+    input {
+      &:focus {
+        outline: none;
+        border-width: 2px;
+        border-color: $FCBlue;
+      }
+    }
   }
 }

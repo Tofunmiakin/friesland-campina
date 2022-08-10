@@ -1,10 +1,12 @@
 import React from "react";
-import { Navigation } from "./containers/Navigation";
+import { Navigation } from "./components/Navigation";
+import { ProductsListing } from "./containers/ProductsListing";
 
 const App = () => {
   return (
     <div className="App">
       <Navigation />
+      <ProductsListing />
     </div>
   );
 };

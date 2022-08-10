@@ -3,6 +3,9 @@ $FCBlue: #0a7fb6;
 $FCSkyBlue: #b1deeb;
 $FCLightSkyBlue: #e2edf2;
 $FCLightGrey: #c4c4c4;
+$FCBackground: #e5e5e5;
+
+$BorderRadius: 8px;
 
 @mixin customButton {
   background-color: $FCBlue;

@@ -11,10 +11,13 @@
 body,
 html,
 #root {
-  margin: 1rem;
+  background-color: #e5e5e5;
 }
 
-.Navigation input {
+.Navigation {
+  background-color: white;
+}
+.Navigation .search-bar {
   height: 48px;
   background: url("../assets/search.png") no-repeat 5% 50%;
   border-radius: 8px;
@@ -24,7 +27,7 @@ html,
   padding-left: 10%;
   border-color: #808080;
 }
-.Navigation input:focus {
+.Navigation .search-bar:focus {
   outline: none;
   border-width: 2px;
   border-color: #0a7fb6;
@@ -38,4 +41,20 @@ html,
 }
 .Navigation .search-button:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
+}
+
+.product-listing {
+  margin-top: 72px;
+}
+.product-listing .listing {
+  border-radius: 8px;
+  margin-top: 24px;
+}
+.product-listing .listing .apply {
+  color: #0a7fb6;
+}
+.product-listing .listing input:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: #0a7fb6;
 }/*# sourceMappingURL=index.css.map */
