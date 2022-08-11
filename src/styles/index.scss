@@ -40,6 +40,7 @@ html,
   .listing {
     border-radius: $BorderRadius;
     margin-top: 24px;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.04);
     .apply {
       color: $FCBlue;
     }
@@ -48,6 +49,19 @@ html,
         outline: none;
         border-width: 2px;
         border-color: $FCBlue;
+      }
+    }
+    #products-found {
+      color: $FCGrey;
+    }
+  }
+  .right-side {
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.04);
+    .product-list {
+      background-color: white;
+      box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.04);
+      .single-product {
+        box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.14);
       }
     }
   }

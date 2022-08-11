@@ -49,6 +49,7 @@ html,
 .product-listing .listing {
   border-radius: 8px;
   margin-top: 24px;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.04);
 }
 .product-listing .listing .apply {
   color: #0a7fb6;
@@ -57,4 +58,17 @@ html,
   outline: none;
   border-width: 2px;
   border-color: #0a7fb6;
+}
+.product-listing .listing #products-found {
+  color: #808080;
+}
+.product-listing .right-side {
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.04);
+}
+.product-listing .right-side .product-list {
+  background-color: white;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.04);
+}
+.product-listing .right-side .product-list .single-product {
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.14);
 }/*# sourceMappingURL=index.css.map */
